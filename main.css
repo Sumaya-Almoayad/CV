@@ -253,7 +253,7 @@ nav {
 
 @media screen and (max-width: 590px) {
   header {
-    background-image: url("/images/mobile-image.jpg");
+    background-image: url("images/mobile-image.jpg");
   }
 }
 
