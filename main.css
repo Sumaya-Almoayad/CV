@@ -1,0 +1,278 @@
+* {
+  font-family: "Josefin Sans", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+h1,
+h2,
+h3,
+h4,
+p,
+a {
+  padding: 0;
+  margin: 0;
+}
+
+/* Navigation Bar */
+
+header {
+  padding: 3% 7%;
+  height: 500px;
+  background-image: url("/images/main-image.jpg");
+  background-size: cover;
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+nav {
+  text-transform: uppercase;
+  transition: 200ms;
+}
+.logo {
+  margin-left: 25px;
+  margin-right: 25px;
+}
+.navbar-nav > li {
+  margin-left: 25px;
+  margin-right: 25px;
+}
+
+.nav-link {
+  padding-bottom: 0;
+}
+
+.navbar-toggler,
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+  outline: none;
+  box-shadow: none;
+  border: none;
+}
+
+.fixed-top.scrolled {
+  background-color: #fff !important;
+  transition: background-color 200ms linear;
+}
+
+/* Home Details */
+
+.bottom-left {
+  text-align: left;
+  text-transform: uppercase;
+  position: absolute;
+  bottom: 4rem;
+  left: 4rem;
+}
+
+.uni-major {
+  transition: 0.4s;
+  width: fit-content;
+  background-color: yellow;
+  color: black;
+  font-weight: bold;
+  padding: 10px;
+}
+.uni-major:hover {
+  transition: 0.4s;
+  background-color: rgb(255, 255, 163);
+}
+
+/* About Section */
+#about {
+  background-color: rgb(255, 255, 255);
+}
+
+.about-coulmn, .about-profile-coulmn {
+  padding: 8.8% 7%;
+}
+.about-profile-coulmn{
+  text-align: center;
+  padding-top: 9.8%;
+}
+.profile{
+  margin-bottom: 75px;
+}
+
+/* Recommendation Letters */
+
+.thumbnails{
+  padding: 5px;
+  border: 2px solid yellow;
+  height: fit-content;
+  width: fit-content;
+}
+
+
+.recommendations{
+  transition: 0.3s;
+  border: 2px solid rgb(134, 134, 0);
+  border-radius: 5px;
+  text-decoration: none;
+  background-color: yellow;
+  color: rgb(85, 85, 0);
+  width: fit-content;
+  padding: 10px;
+}
+.recommendation-title{
+  margin-bottom: 50px;
+}
+.recommendations:hover{
+  transition: 0.3s;
+  color: black;
+  text-decoration: none;
+  background-color: rgb(134, 134, 0);
+}
+
+
+.about-lg {
+  text-align: left;
+  width: fit-content;
+  border-bottom: 5px solid yellow;
+}
+
+/* Works Section */
+
+#works {
+  background-color: rgb(245, 245, 245);
+  text-align: center;
+  padding: 5% 7%;
+}
+.works-lg {
+  margin-bottom: 100px;
+}
+
+/* Video */
+
+.work-video {
+  margin-bottom: 50px;
+}
+
+/* Grid */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  flex: 25%;
+  max-width: 24%;
+  margin: 0 4px;
+  margin-bottom: 7px;
+}
+
+.column img {
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* Image Hover */
+
+.column {
+  position: relative;
+}
+
+.work-img, .recommendation-img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.5s ease;
+  background-color: yellow;
+}
+
+.column:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: rgb(131, 131, 0);
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+/* Contact Info */
+
+#contact {
+  text-align: center;
+}
+.phone-info {
+  padding: 5% 7%;
+}
+.social-media {
+  padding-top: 40px;
+  height: 100px;
+  background-color: rgb(14, 14, 14);
+}
+.social-btn {
+  font-size: 20px;
+  transition: 0.3s;
+  color: yellow;
+  padding: 10px;
+  border: none;
+  background-color: transparent;
+  display: inline;
+}
+.social-btn:focus {
+  outline: 0 !important;
+}
+.social-btn:hover {
+  transition: 0.3s;
+  color: rgb(163, 163, 0);
+}
+
+.email {
+  display: inline;
+}
+
+@media screen and (max-width: 590px) {
+  header {
+    background-image: url("/images/mobile-image.jpg");
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .profile{
+    width: 100%;
+  }
+}
+@media screen and (max-width: 993px) {
+  .profile{
+    width: 95%;
+  }
+}
