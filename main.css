@@ -246,12 +246,14 @@ nav {
 }
 
 .email {
-  display: inline;
+  color: yellow;
+  font-size: smaller;
+  font-weight: 100;
 }
 
 @media screen and (max-width: 590px) {
   header {
-    background-image: url("images/mobile-image.jpg");
+    background-image: url("/images/mobile-image.jpg");
   }
 }
 
